@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="UTF-8">
+<title>Қолжетімді форма</title>
+
+<style>
+  input:focus {
+    outline: 2px solid #005fcc;
+  }
+
+  .error {
+    color: red;
+    font-size: 14px;
+  }
+</style>
+</head>
+
+<body>
+
+<h1>Тіркелу формасы</h1>
+
+<form aria-label="Тіркелу формасы">
+
+  <label for="name">Аты-жөні</label>
+  <input id="name" type="text" aria-describedby="nameError">
+  <div id="nameError" class="error">Аты-жөнін енгізіңіз</div>
+
+  <br><br>
+
+  <label for="email">Email</label>
+  <input id="email" type="email" aria-describedby="emailError">
+  <div id="emailError" class="error">Дұрыс email енгізіңіз</div>
+
+  <br><br>
+
+  <label for="password">Пароль</label>
+  <input id="password" type="password" aria-describedby="passError">
+  <div id="passError" class="error">Минимум 6 символ</div>
+
+  <br><br>
+
+  <button type="submit">Жіберу</button>
+
+</form>
+
+</body>
+</html>
